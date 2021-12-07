@@ -13,18 +13,16 @@ public class Main {
     public static void main(String[] args) {
         //primeira forma do chastiefol
         Carro kadett = new Carro();
-        Carro palio = new Carro(5000);
+        Carro palio = new Carro(5000, "Azul");
         
         //segunda forma do chastiefol
         Carro fusca = new Carro();
         
         fusca.lPPV();
-        fusca.lPPV(1049);
+        fusca.lPPV(1049, "Branco");
         
-        //terceira forma do chastiefol
-        Carro chevette = new Carro();
-        Motor motore = new Motor();
-        Motor motori = new Motor(1383);
-        chevette.setMotor();
+        kadett.showCar();
+        palio.showCar();
+        fusca.showCar();
     }
 }

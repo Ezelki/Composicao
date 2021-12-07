@@ -8,19 +8,29 @@ public class Carro {
     private Motor motor;
     private Direcao direcao;
     
-    public void lPPV(){
-        motor = new Motor();
+    public void showCar(){
+        System.out.println("Potência: "+motor.getPotencia());
+        System.out.println("Cor: "+direcao.getCor());
     }
     
-    public void lPPV(int potencia){
+    public void lPPV(){
+        motor = new Motor();
+        direcao = new Direcao();
+    }
+    
+    public void lPPV(int potencia, String cor){
         motor = new Motor(potencia);
+        direcao = new Direcao(cor);
     }
     
     public Carro(){
         motor = new Motor();
+        direcao = new Direcao();
     }
     
-    public Carro(int potencia){
+    public Carro(int potencia, String cor){
         motor = new Motor(potencia);
+        direcao = new Direcao(cor);
     }
+    
 }
