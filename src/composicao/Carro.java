@@ -9,6 +9,7 @@ public class Carro {
     private Direcao direcao;
     
     public void showCar(){
+        System.out.println("----------Carro----------");
         System.out.println("Potência: "+motor.getPotencia());
         System.out.println("Cor: "+direcao.getCor());
     }
